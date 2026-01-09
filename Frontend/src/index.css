@@ -1,0 +1,146 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #bb86fc;
+  background-color: #000000;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+  color: #bb86fc;
+}
+
+a {
+  font-weight: 500;
+  color: #bb86fc;
+  text-decoration: none;
+}
+a:hover {
+  color: #9a67ea;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #bb86fc;
+  color: #000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  background-color: #9a67ea;
+  box-shadow: 0 0 15px #9a67ea;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100vw;
+}
+
+.app-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.file-input {
+  background-color: #1a1a1a;
+  border: 2px solid #bb86fc;
+  border-radius: 8px;
+  padding: 10px;
+  color: #bb86fc;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.result-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.bw-image-wrapper {
+  max-width: 90vw;
+  width: 400px;
+  margin: 0 auto 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bw-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Feature maps container */
+.feature-maps-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+.feature-map-wrapper {
+  position: relative;
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+}
+.feature-map-image {
+  display: block;
+  border-radius: 8px;
+  width: 120px;
+  height: auto;
+}
+
+/* Histogram */
+.histogram-canvas {
+  max-width: 95vw;
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .bw-image-wrapper {
+    width: 90vw;
+  }
+  .feature-map-wrapper {
+    width: 90px;
+  }
+  .feature-map-image {
+    width: 90px;
+  }
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
