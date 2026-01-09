@@ -88,27 +88,6 @@ def upload_image():
     })
 
 
-UPLOAD_FOLDER = "uploads"
-PROCESSED_FOLDER = "processed"
-
-@app.route("/uploads/<filename>")
-def serve_upload(filename):
-    return send_from_directory(UPLOAD_FOLDER, filename)
-
-@app.route("/processed/<filename>")
-def serve_processed(filename):
-    return send_from_directory(PROCESSED_FOLDER, filename)
-
-@app.route("/history_list", methods=["GET"])
-def history_list():
-    uploaded_files = sorted(os.listdir(UPLOAD_FOLDER))
-    processed_files = sorted(os.listdir(PROCESSED_FOLDER))
-    return jsonify({
-        "uploads": uploaded_files,
-        "processed_bw": processed_files
-    })
-
-
 if __name__ == "__main__":
     try:
         app.run(debug=True)
