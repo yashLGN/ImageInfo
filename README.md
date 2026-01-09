@@ -12,7 +12,7 @@ Features are bascially something in a image such as Edges , Lines etc. A feature
 # Sobel Operator
 Edge detection, An edge is basically where the brightness changes suddenly and Sobel operator is what detects edges by checking the itensity of pixel if it changes or not.<br>
 Sobel X : It is vertical edge detection and detects the change in brightness from left to right.<br>
-Sobel X : It is horizontal edge detection and detects the change in brightness from top to bottom.<br>
+Sobel Y : It is horizontal edge detection and detects the change in brightness from top to bottom.<br>
 Edge Map : It is combined of both and is in all direction not just vertical or horizontal. It has a respective formula which is :<br>
 Edge = sqrt( (SobelX)^2 + (SobelY)^2 )<br>
 It gives all the edges and clear boundries in an image.
