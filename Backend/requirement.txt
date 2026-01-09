@@ -1,6 +1,6 @@
-Flask==2.3.2
-flask-cors==3.1.13
-numpy==1.25.2
-opencv-python==4.8.1.78
-Pillow==10.0.0
-gunicorn==21.2.0
+Flask
+flask-cors==3.0.10
+gunicorn
+opencv-python
+numpy
+Pillow
