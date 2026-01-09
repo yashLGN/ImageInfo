@@ -19,3 +19,5 @@ It gives all the edges and clear boundries in an image.
 
 # Histogram Data of an Image
 It is a graph which shows how bright and dark the image is. Basically the way it works is it counts how many pixel has 0 value , how many has 1 , up to 255.
+
+![Demo Screenshot](Test.png)
