@@ -39,10 +39,10 @@ def upload_image():
     input_path = os.path.join(UPLOAD_FOLDER, filename)
     output_path = os.path.join(PROCESSED_FOLDER, filename)
 
-    # Save uploaded image
+    # Saveing uploaded image
     file.save(input_path)
 
-    # Read image using OpenCV
+    # Reading guven image using OpenCV
     image = cv2.imread(input_path)
 
     # Check if image was loaded successfully
